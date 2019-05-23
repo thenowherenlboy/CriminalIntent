@@ -9,10 +9,12 @@ public class Crime {
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
+    private boolean mRequiresFuzz;
 
     public Crime() {
         mId = UUID.randomUUID();
         mDate = new Date();
+
 
     }
 
@@ -45,5 +47,11 @@ public class Crime {
     }
 
 
+    public boolean isRequiresFuzz() {
+        return mRequiresFuzz;
+    }
 
+    public void setRequiresFuzz(boolean requiresFuzz) {
+        mRequiresFuzz = requiresFuzz;
+    }
 }
