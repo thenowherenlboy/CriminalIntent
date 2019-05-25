@@ -17,6 +17,10 @@ public class CrimeListFragment extends Fragment {
 
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
+//<<<<<<< HEAD
+//
+//=======
+//>>>>>>> e3738b4b6ac3208f3803a6be46b2d10b675f8f71
 
 
     @Override
@@ -44,6 +48,7 @@ public class CrimeListFragment extends Fragment {
         private Crime mCrime;
 
         public CrimeHolder(LayoutInflater inflater, ViewGroup parent) {
+
             super(inflater.inflate(R.layout.list_item_crime, parent, false));
             itemView.setOnClickListener(this);
             mTitleTextView = (TextView) itemView.findViewById(R.id.crime_title);
