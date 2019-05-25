@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,8 @@ public class CrimeListFragment extends Fragment {
 
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
+
+    private static final String TAG = "CrimeListFragment";
 
 
     @Override
@@ -71,12 +74,14 @@ public class CrimeListFragment extends Fragment {
 
         @Override
         public CrimeHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            Log.i(TAG,"View made in onCreateViewHolder");
             LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
             return new CrimeHolder(layoutInflater, parent);
         }
 
         @Override
         public void onBindViewHolder(CrimeHolder holder, int position) {
+            Log.i(TAG,"View recycled at position" + position);
             Crime crime = mCrimes.get(position);
             holder.bind(crime);
 
