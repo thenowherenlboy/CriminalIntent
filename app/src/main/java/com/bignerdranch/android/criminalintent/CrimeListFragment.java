@@ -17,7 +17,10 @@ public class CrimeListFragment extends Fragment {
 
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
+<<<<<<< HEAD
 
+=======
+>>>>>>> e3738b4b6ac3208f3803a6be46b2d10b675f8f71
 
 
     @Override
@@ -66,7 +69,9 @@ public class CrimeListFragment extends Fragment {
 
 
     private class CrimeAdapter extends RecyclerView.Adapter<CrimeHolder> {
+
         private List<Crime> mCrimes;
+
         public CrimeAdapter(List<Crime> crimes) { mCrimes = crimes; }
 
         @Override
