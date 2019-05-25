@@ -17,9 +17,7 @@ public class CrimeListFragment extends Fragment {
 
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
-    private TextView mTitleTextView;
-    private TextView mDateTextView;
-    private Crime mCrime;
+
 
 
     @Override
@@ -41,7 +39,13 @@ public class CrimeListFragment extends Fragment {
     }
 
     private class CrimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+
+        private TextView mTitleTextView;
+        private TextView mDateTextView;
+        private Crime mCrime;
+
         public CrimeHolder(LayoutInflater inflater, ViewGroup parent) {
+
             super(inflater.inflate(R.layout.list_item_crime, parent, false));
             itemView.setOnClickListener(this);
             mTitleTextView = (TextView) itemView.findViewById(R.id.crime_title);
@@ -57,7 +61,7 @@ public class CrimeListFragment extends Fragment {
             mCrime = crime;
             mTitleTextView.setText(mCrime.getTitle());
             mDateTextView.setText(mCrime.getDate().toString());
-        }\
+        }
     }
 
 
