@@ -1,7 +1,6 @@
 package com.bignerdranch.android.criminalintent;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -56,7 +55,7 @@ public class CrimeFragment extends Fragment {
         mDateButton.setText(mCrime.getDate().toString());
         mDateButton.setEnabled(false);
 
-        mSolveCheckBox = (CheckBox) v.findViewById(R.id.crrme_solved);
+        mSolveCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
         mSolveCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
