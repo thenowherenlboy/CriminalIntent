@@ -12,12 +12,11 @@ public class Crime {
     private boolean mSolved;
     private boolean mRequiresFuzz;
     private SimpleDateFormat df = new SimpleDateFormat("EEEE MMM dd, yyyy");
+    private SimpleDateFormat time = new SimpleDateFormat("HH:mm");
 
     public Crime() {
         mId = UUID.randomUUID();
         mDate = new Date();
-
-
     }
 
     public UUID getId() {
@@ -39,6 +38,8 @@ public class Crime {
     public String getFormattedDate() {
         return df.format(mDate);
     }
+
+    public String getTime() { return time.format(mDate); }
 
     public void setDate(Date date) {
         mDate = date;
