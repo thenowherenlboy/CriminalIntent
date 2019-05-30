@@ -10,7 +10,7 @@ public class ListRow extends RecyclerView.ViewHolder {
 
     public ListRow(View view) {
         super(view);
-        mThumbnail = (ImageView) view.findViewById(R.id.invisible);
+        mThumbnail = view.findViewById(R.id.invisible);
         // TODO: change invisible to thumbnail after it's defined
     }
 }

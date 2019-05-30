@@ -50,7 +50,7 @@ public class CrimeFragment extends Fragment {
                              Bundle saveInstanceState) {
         View v = inflater.inflate(R.layout.fragment_crime, container, false);
 
-        mTitleField = (EditText) v.findViewById(R.id.crime_title);
+        mTitleField = v.findViewById(R.id.crime_title);
         mTitleField.setText(mCrime.getTitle());
         mTitleField.addTextChangedListener(new TextWatcher() {
             @Override
@@ -71,7 +71,7 @@ public class CrimeFragment extends Fragment {
             }
         });
 
-        mDateButton = (Button) v.findViewById(R.id.crime_date);
+        mDateButton = v.findViewById(R.id.crime_date);
         updateDate();
         mDateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +83,7 @@ public class CrimeFragment extends Fragment {
             }
         });
 
-        mSolveCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
+        mSolveCheckBox = v.findViewById(R.id.crime_solved);
         mSolveCheckBox.setChecked(mCrime.isSolved());
         mSolveCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
