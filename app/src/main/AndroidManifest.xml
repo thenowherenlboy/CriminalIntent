@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-            android:name="com.google.android.actions"/>
+            android:name="com.google.android.actions"
+            android:resource="@layout/fragment_crime_list"/>
 
         <activity android:name=".CrimeListActivity">
             <intent-filter>
@@ -19,7 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CrimePagerActivity"></activity>
+        <activity android:name=".CrimePagerActivity"
+            android:parentActivityName=".CrimeListActivity"></activity>
     </application>
 
 </manifest>
