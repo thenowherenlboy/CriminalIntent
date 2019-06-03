@@ -13,10 +13,12 @@ public class Crime {
     private boolean mRequiresFuzz;
     private SimpleDateFormat df = new SimpleDateFormat("EEEE MMM dd, yyyy");
 
-    public Crime() {
-        mId = UUID.randomUUID();
+    public Crime(UUID id) {
+        mId = id;
         mDate = new Date();
-
+    }
+    public Crime() {
+        this(UUID.randomUUID());
 
     }
 
