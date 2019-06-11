@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntentoCriminal</string>
+    <string name="crime_title_hint">Introducza un t\u00edtulo para el crimen.</string>
+    <string name="crime_title_label">T\u00edtulo</string>
+    <string name="crime_details_label">Detalles</string>
+    <string name="crime_solved_label">Solucionado</string>
+    <string name="crime_date_picker">Fecha del crimen</string>
+    <string name="new_crime">Crimen Nuevo</string>
+    <string name="crime_suspect_text">Elegir Sospechoso</string>
+    <string name="crime_report_text">Enviar el Infrome del Crimen</string>
+    <string name="show_subtitle">Mostrar Subt\u00edtulos</string>
+    <string name="hide_subtitle">Escondar Subt\u00edtulos</string>
+    <string name="subtitle_format">%1$d crimenes</string>
+    <string name="crime_report">%1$s! El crimen fue descubierto el %2$s, %3$s, and %4$s</string>
+    <string name="crime_report_solved">El caso est\u00e1 resuelto.</string>
+    <string name="crime_report_unsolved">El caso no est\u00e1 resuelto</string>
+    <string name="crime_report_no_suspect">No hay sospechoso.</string>
+    <string name="crime_report_suspect">el/la sospechoso/a es %s.</string>
+    <string name="crime_report_subject">IntentoCriminal Informe del Crimen</string>
+    <string name="send_report">Enviar el informe del crimen a trav\u00e9s de</string>
+</resources>
